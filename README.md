@@ -27,7 +27,7 @@
 ### アーキテクチャ
 <img alt="ViT" src=./image/vit.png></img>
 ### モデルコンフィグ
-<img alt="ViT config" src=./image/vit_config></img>
+<img alt="ViT config" src=./image/vit_config.png></img>
 ## ファインチューニング
 - 通常、大規模なデータセットで ViT を事前トレーニングし、解きたいタスクに合わせてファインチューニングする
 - このために、事前トレーニングされた予測ヘッドを削除し、ゼロ初期化された $D × K$ フィードフォワード層を接続する
