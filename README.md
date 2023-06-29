@@ -3,7 +3,6 @@
 - 初期Transformerに**少しだけ改良**を加え、画像分類に適用できるようにした
 - 画像を複数のパッチに分割し、パッチを単語のように学習させる（パッチの数、サイズは固定）
 - 分割時、画像位置を学習させるために、**2DのPositionalEmmbeding**を行う
-- 
 ## 画像をTransformerの入力へ変換する
 1. (H, W, C)の画像を2Dパッチに分割する
 - $Image: x ∈ R^{H×W×C}$ → $2D patches: x_p ∈ R^{N×(P^2·C)}$
@@ -45,3 +44,6 @@
 - batch size: 512
 - 事前学習時より、画像解像度を大きくする
 - ViTのMLPヘッドを取り替える。この時重みを0で初期化
+## 参考
+1. https://qiita.com/omiita/items/0049ade809c4817670d7
+2. https://openreview.net/pdf?id=YicbFdNTTy
